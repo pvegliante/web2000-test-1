@@ -1,0 +1,35 @@
+1. How do we measure the length of the critical rendering path? (10 pts)
+
+  The number of server round trips your page must do in order to fully load and render
+
+2. What are the events in the Timeline pane which show the DOM being built, the CSSOM being built, and the render tree being built? (10 pts)
+
+  Parse HTML, Recalculate Style, Layout
+
+3. What is the render tree? (10 pts)
+
+  Contains everything on a page including their styles and header.
+
+4. What are three things you can do in order to speed up a website's load time? (10 pts)
+
+  Compression, Inline styles, Optimize images, Lower the number of things requested.
+
+5. What is the name of the Google tool you can use to see a list of things you can do to improve your page's load speed? (10 pts)
+
+  Google page speed insite.
+
+6. Use browserify to bundle all the files in the following project: https://github.com/Swolebrain/connect4
+Setup Steps:
+
+Fork the project by going to the above link and clicking "Fork" near the top right of the screen
+The project will now have a copy in your own github page. Clone it from there.
+In your computer, initialize this folder as a node project.
+Install browserify, make sure it's saved as a development dependency in package.json
+Split out the code from the createTable function and the isLegitEdge function into separate files. Make sure each function has its own file.
+Back in your main file, require the contents of your two new files
+Create an npm script to use browserify to create a javascript bundle (one single file containing all your JS).
+Do anything else you need to do in order to get the bundle working and test your site.
+Before submitting, ensure your code is browserified. If the first line is not a long, minified function then you did it wrong.
+Commit and push to github
+Upload the game to yourname.fvi-grad.com
+Bonus points: Produce a minified bundle for the exercise above using uglifyjs.
