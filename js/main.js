@@ -3,8 +3,10 @@ var edges = [];
 var redScore = 0;
 var blueScore = 0;
 var SIDES = 8;
+var createTS = require('/new.js')
 
-function createTable(side){
+
+function createTable(createTS){
   var tbody = document.getElementById("matrix");
   tbody.innerHTML = '';
   for (var row = 0; row < side; row++){
